@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "dev": "node --experimental-global-webcrypto ./node_modules/vite/bin/vite.js",
+    "build": "tsc -b && node --experimental-global-webcrypto ./node_modules/vite/bin/vite.js build",
+    "preview": "node --experimental-global-webcrypto ./node_modules/vite/bin/vite.js preview",
+    "test:smoke": "node ./scripts/smoke-dev.mjs"
   },
   "dependencies": {
     "three": "^0.160.0"

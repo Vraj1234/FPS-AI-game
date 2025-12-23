@@ -1,0 +1,19 @@
+{
+  "name": "fps-ai-game",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-global-webcrypto ./node_modules/vite/bin/vite.js",
+    "build": "tsc -b && node --experimental-global-webcrypto ./node_modules/vite/bin/vite.js build",
+    "preview": "node --experimental-global-webcrypto ./node_modules/vite/bin/vite.js preview",
+    "test:smoke": "node ./scripts/smoke-dev.mjs"
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
